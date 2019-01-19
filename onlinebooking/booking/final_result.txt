@@ -1,0 +1,33 @@
+[{u'arrival': u'13:18:00', u'changes': 4, u'departure': u'08:09:00'}, 
+{u'arrival': u'13:52:00', u'changes': 3, u'departure': u'08:09:00'}, 
+{u'arrival': u'14:18:00', u'changes': 3, u'departure': u'08:39:00'}, 
+{u'arrival': u'15:52:00', u'changes': 2, u'departure': u'09:07:00'}, 
+{u'arrival': u'14:18:00', u'changes': 4, u'departure': u'09:09:00'}]
+
+
+
+
+
+
+
+[
+{u'arrival': u'13:18:00', u'changes': 4, u'departure': u'08:09:00', 
+	u'jouney_details': 
+	[u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', 
+	u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:40:00', 
+	u' Train 1040 Depart London Euston at 10:40:00 - Arrive Crewe at 12:10:00', 
+
+	u' Train 1223 Depart Crewe at 12:23:00 - Arrive Chester at 12:46:00', 
+
+	u' Train 1302 Depart Chester at 13:02:00 - Arrive Delamere at 13:18:00']
+}, 
+{u'arrival': u'13:52:00', u'changes': 3, u'departure': u'08:09:00', u'jouney_details': 		[u' Train 0809 Depart Chichester at 08:09:00 - Arrive London Victoria at 09:40:00', u' Train 0940 Depart London Victoria at 09:40:00 - Arrive London Euston at 10:20:00', u' Train 1020 Depart London Euston at 10:20:00 - Arrive Stockport at 12:16:00', u' Train 1252 Depart Stockport at 12:52:00 - Arrive Delamere at 13:52:00']
+}, 
+
+{u'arrival': u'14:18:00', u'changes': 3, u'departure': u'08:39:00', u'jouney_details': [u' Train 0839 Depart Chichester at 08:39:00 - Arrive London Victoria at 10:11:00', u' Train 1011 Depart London Victoria at 10:11:00 - Arrive London Euston at 11:10:00', u' Train 1110 Depart London Euston at 11:10:00 - Arrive Chester at 13:11:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00']},
+
+ {u'arrival': u'15:52:00', u'changes': 2, u'departure': u'09:07:00', u'jouney_details': [u' Train 0907 Depart Chichester at 09:07:00 - Arrive Southampton at 10:05:00', u' Train 1017 Depart Southampton at 10:17:00 - Arrive Stockport at 14:13:00', u' Train 1452 Depart Stockport at 14:52:00 - Arrive Delamere at 15:52:00']}, 
+
+ {u'arrival': u'14:18:00', u'changes': 4, u'departure': u'09:09:00', u'jouney_details': [u' Train 0909 Depart Chichester at 09:09:00 - Arrive London Victoria at 10:41:00', u' Train 1041 Depart London Victoria at 10:41:00 - Arrive London Euston at 11:40:00', u' Train 1140 Depart London Euston at 11:40:00 - Arrive Crewe at 13:11:00', u' Train 1323 Depart Crewe at 13:23:00 - Arrive Chester at 13:46:00', u' Train 1402 Depart Chester at 14:02:00 - Arrive Delamere at 14:18:00']}
+
+ ] Chichester Delamere

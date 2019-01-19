@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title></title>
+<title>Trains List</title>
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="{{ STATIC_URL }}/material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
@@ -16,23 +16,23 @@
     <script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
 <style>
 .row {
-	margin: 0px;
-	padding-right: 15px;
+  margin: 0px;
+  padding-right: 15px;
 }
 .btn-large {
-	font-size: 16px;
+  font-size: 16px;
 }
 .table {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .panel-title {
-	font-size: 14px;
+  font-size: 14px;
 }
 .panel-heading {
-	padding: 0px;
+  padding: 0px;
 }
 .h6, h6 {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 </style>
 </head>
@@ -40,14 +40,12 @@
 <main>
   <div class="container">
     <div class="row">
-	  
+    
         <h3>Point to Point Tickets</h3>
         <div class="row">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h6 style="font-size:17px;"> Roma Termini -
-                Milano Centrale -
-                Jan 1st, 2019 </h6>
+              <h6 style="font-size:17px;"> {{loc}} - {{point}} - {{dateinfo}}</h6>
             </div> 
             <div class="table-responsive">
               <table class="table">
@@ -69,15 +67,18 @@
                     <div class="panel-heading">
                       <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                         <table class="table">
+                        {%for result in final_result%}
+
                           <tr class="a_journey success selected">
-                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span> Roma Termini</td>
-                            <td style="width:20%;">Milano Centrale</td>
-                            <td style="width:10%;">08:00</td>
-                            <td style="width:10%;">10:59</td>
+                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span>{{loc}}</td>
+                            <td style="width:20%;">{{point}}</td>
+                            <td style="width:10%;">{{result.departure}}</td>
+                            <td style="width:10%;">{{result.arrival}}</td>
                             <td style="width:10%;">02:59</td>
-                            <td style="width:10%;">0</td>
+                            <td style="width:10%;">{{result.changes}}</td>
                             <td style="width:10%;"> £40.00 </td>
                           </tr>
+                        {% endfor %}
                         </table>
                         </a> </h4>
                     </div>
@@ -149,7 +150,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="panel panel-default">
+                  <!-- <div class="panel panel-default">
                     <div class="panel-heading">
                       <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                         <table class="table">
@@ -188,7 +189,7 @@
                     <div id="collapse3" class="panel-collapse collapse">
                       <div class="panel-body"></div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
